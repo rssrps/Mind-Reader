@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="raman.in.mindreader.Help">
+
+
+    <TextView
+        android:id="@+id/helpheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="15dp"
+        android:text="Help"
+        android:textColor="#fff"
+        android:textSize="35sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:text="1. Think any card out of 52 cards in your mind.\n\n2. There are 3 pages. Choose the page where you see your card.\n\n3. You can change pages using left and right arrows.\n\n4. You will be asked to choose page 4 times.\n\n5. I will tell you which card you were thinking."
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/helpheading" />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adViewHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_home_footer"
+        android:layout_marginLeft="8dp"
+        ads:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        ads:layout_constraintRight_toRightOf="parent"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="0dp" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Mind Reader</string>
+
+    <string name="admob_app_id">ca-app-pub-7841910003460255~6246401897</string>
+    <string name="banner_home_footer">ca-app-pub-7841910003460255/9183841835</string>
+    <string name="interstitial_full_screen">ca-app-pub-7841910003460255/5193050967</string>
+
+</resources>
